@@ -25,7 +25,7 @@ function newQuote() {
     // Randomly
     // Loader display
     showLoadingSpinner();
-    const quote = localQuotes[Math.floor(Math.random() * localQuotes.length)];
+    const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
     // Author Check
     if (!quote.author) {
         quote.author = 'Unknown';
